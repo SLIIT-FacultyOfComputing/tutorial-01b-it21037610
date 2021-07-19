@@ -5,6 +5,9 @@ Implement the three functions minimum(), maximum() and multiply() below the main
 Do not change the code given in the main() function when you are implementing your solution.*/
 
 #include <stdio.h>
+int minimum(int x, int y);
+int maximum(int x, int y);
+int multiply(int x, int y);
 
 int main() {
    int no1, no2;
@@ -16,4 +19,29 @@ int main() {
    printf("%d ", maximum(no1, no2));
    printf("%d ", multiply(no1, no2));
    return 0;
+}
+
+int minimum(int x, int y) {
+  int ans;
+  if(x <= y)
+  ans = x;
+  else
+  ans = y;
+
+  return ans;
+}
+
+int maximum(int x, int y) {
+  int ans;
+  if(x >= y)
+  ans = x;
+  else
+  ans = y;
+  
+  return ans;
+}
+
+int multiply(int x, int y) {
+  int ans = x*y;
+  return ans;
 }
